@@ -43,7 +43,7 @@
 //     console.log(typeof x);
 //     for (const pro in x) {
 //         console.log(`${pro}:${value}: ${x[pro]}: ${index}`);
-        
+
 //     }
 // });
 
@@ -66,10 +66,9 @@
 // const doctorName = DoctorAdderesForMap.map((doctor) => {
 //     doctor.name === "Khalid" ? (doctor.name = "Dr. "+doctor.name) : doctor.name; //ternary operator
 //     return doctor["name"];
-  
+
 // });
 // console.log(doctorName);
-
 
 // //filter example on Array
 // const filterExample = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -77,7 +76,6 @@
 //     return filterExample > 5;
 // });
 // console.log(filter);
-
 
 // // weak map and weak set
 // import addNumber from "./main";
@@ -92,13 +90,56 @@
 
 // console.log(addNumber(2, 3));
 
-//pad seart and trim pad end 
-let minute = '04';
-let second = '09';
-let hour = '8';
+//pad seart and trim pad end
+// let minute = '04';
+// let second = '09';
+// let hour = '8';
 
-let TremName = 'Khalid';
-TremName = TremName.trim();
-console.log(hour.padStart(2));
-console.log(minute.padEnd(2, '0'));
-console.log(TremName);
+// let TremName = 'Khalid';
+// TremName = TremName.trim();
+// console.log(hour.padStart(2));
+// console.log(minute.padEnd(2, '0'));
+// console.log(TremName);
+// let pi = 3.141592653589793;
+// console.log(pi.toFixed(4));
+// const divided = (a,b) => {
+//     if(b === 0) {
+//         throw new SyntaxError('Divided by zero');
+//         // throw new Error('Divided by zero');
+//     }
+//     return a / b;
+// }
+
+// try {console.log(divided(5,0));}
+// catch (error) {
+//     console.log(error[0]);
+//     console.log(error.message);
+//     console.log(error.name);
+//     console.log(error.stack);
+//     console.log(error instanceof SyntaxError);
+//     console.log(error instanceof Error);
+
+// }
+// finally {
+//     console.log('Finally block');
+//  }
+
+//Buid a function that return objct
+function user(name,age) {
+  const userObject = {
+      name,
+      age,
+        
+    walk: function () {
+      console.log("walk");
+    },
+  };
+  return userObject;
+}
+
+const user1 = user('Khalid', 30);
+const user2 = user('Hossain', 30);
+
+//print Console
+console.log(user1);
+console.log(user2);
