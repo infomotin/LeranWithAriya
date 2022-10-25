@@ -96,4 +96,9 @@
 let minute = '04';
 let second = '09';
 let hour = '8';
-console.log(hour.padStart(2, '0'));
+
+let TremName = 'Khalid';
+TremName = TremName.trim();
+console.log(hour.padStart(2));
+console.log(minute.padEnd(2, '0'));
+console.log(TremName);
