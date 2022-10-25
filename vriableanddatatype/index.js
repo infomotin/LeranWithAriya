@@ -125,21 +125,32 @@
 //  }
 
 //Buid a function that return objct
-function user(name,age) {
-  const userObject = {
-      name,
-      age,
+// function user(name,age) {
+//   const userObject = {
+//       name,
+//       age,
         
-    walk: function () {
-      console.log("walk");
-    },
+//     walk: function () {
+//       console.log("walk");
+//     },
+//   };
+//   return userObject;
+// }
+
+// const user1 = user('Khalid', 30);
+// const user2 = user('Hossain', 30);
+
+// //print Console
+// console.log(user1);
+// console.log(user2);
+
+
+function User(name, age) {
+  this.name = name;
+  this.age = age;
+  this.walk = function () {
+    console.log("walk");
   };
-  return userObject;
 }
-
-const user1 = user('Khalid', 30);
-const user2 = user('Hossain', 30);
-
-//print Console
+const user1 = new User("Khalid", 30);
 console.log(user1);
-console.log(user2);
